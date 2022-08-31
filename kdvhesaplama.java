@@ -8,7 +8,7 @@ public class kdvhesaplama {
         Scanner input = new Scanner(System.in);
         System.out.print("Ücret Tutarını Giriniz: ");
         tutar = input.nextDouble();
-        // Tutarın değer aralığına göre koşuluğumuzu yazıyoruz.
+        // Tutarın değer aralığına göre koşuluğumuzu
         if (tutar <= 1000) {
             kdvtutar = 0.18;
             kdv = tutar * kdvtutar;
