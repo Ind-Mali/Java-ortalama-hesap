@@ -10,12 +10,14 @@ public class kdvhesaplama {
         tutar = input.nextDouble();
         // Tutarın değer aralığına göre koşuluğumuzu
         if (tutar <= 1000) {
+            // KDV oranı %18 iken
             kdvtutar = 0.18;
             kdv = tutar * kdvtutar;
             kdvliTutar = tutar + kdv;
             System.out.println("Ürünün KDV'si: " + kdv);
             System.out.println("Ürünün Toplam Fiyatı: " + kdvliTutar);
         } else {
+            //  KDV oranı %8 iken
             kdvtutar = 0.08;
             kdv = tutar * kdvtutar;
             kdvliTutar = tutar + kdv;
